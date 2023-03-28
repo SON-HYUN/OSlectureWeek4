@@ -1,0 +1,13 @@
+# 소프트웨어학부 2학년 손의현 (2020039083)
+# 오픈소스기초프로젝트 2주차 과제 : * 출력하기
+# *의 갯수 , 한줄의 * 의 최대 갯수 두가지를 입력받음
+
+numOfStars = int(input('출력할 별의 갯수 : '))
+starsPerLine = int(input('몇개의 별마다 줄바꿈을 할것입니까? 숫자 입력 : '))
+str = ''
+for _ in range(starsPerLine) :
+    str = str+'*'
+for _ in range(numOfStars//starsPerLine) :
+    print(str)
+for _ in range(numOfStars%starsPerLine) :
+    print('*', end='')
